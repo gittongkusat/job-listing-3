@@ -2,12 +2,15 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <a class="navbar-brand" href="/">Job Listing </a>
+      <a class="navbar-brand" href="/">
+        <span class="logo"><i class="fa fa-envira logo-icon" aria-hidden="true"></i> Job Listing</span>
+      </a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
+
       <li>
         <% if !current_user %>
         <li><%= link_to("注册", new_user_registration_path) %></li>
@@ -15,6 +18,7 @@
         <% else %>
         <li  class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-user-circle" aria-hidden="true"></i>
             Hi!, <%= current_user.email %>
             <b class="caret"></b>
           </a>
