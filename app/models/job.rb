@@ -1,5 +1,5 @@
 class Job < ApplicationRecord
-  has_many :resume 
+  has_many :resumes
   scope :published, -> { where(is_hidden: false) }
   scope :recent, -> { order('created_at DESC') }
   validates :title, presence: true
