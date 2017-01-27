@@ -1,40 +1,51 @@
-<nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
 
-      <div class="navbar-header">
-      <a class="navbar-brand" href="/">
-        <span class="logo"><i class="fa fa-envira logo-icon" aria-hidden="true"></i> 招聘网站</span>
-      </a>
-    </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="dropdownMenuDivider">
-      <ul class="nav navbar-nav navbar-right">
-
-      <li>
-        <% if !current_user %>
-        <li><%= link_to("注册", new_user_registration_path) %></li>
-        <li><%= link_to("登入", new_user_session_path) %></li>
-        <% else %>
-        <li  class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-            <i class="fa fa-user-circle" aria-hidden="true"></i>
-            Hi!, <%= current_user.email %>
-            <b class="caret"></b>
-          </a>
-          <ul class="dropdown-menu">
-            <% if current_user.admin? %>
-            <li><%= link_to("Admin Panel", admin_jobs_path) %></li>
-            <% end %>
-            <li><%= link_to("登出", destroy_user_session_path, method: :delete) %> </li>
-          </ul>
-        </li>
-        <% end %>
-      </li>
-    </ul>
-  </div>
-  <!-- /.navbar-collapse -->
+<!-- Second navbar for search -->
+<nav class="navbar navbar-default" id="qz-header">
+<div class="navbar-container">
+<div class="navbar-header">
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+  <a class="navbar-brand" href="/">
+    <span class="logo"><i class="fa fa-envira logo-icon" aria-hidden="true"></i>全栈营</span>
+  </a>
 </div>
-<!-- /.container-fluid -->
+<div class="collapse navbar-collapse navbar-ex1-collapse">
+  <ul class="nav navbar-nav navbar-left navbar-link">
+<li><a href="/vip_to_payment">预定VIP</a></li>
+<li><a href="/pages/course_intro">课程介绍</a></li>
+<li><a href="/pages/students">学员心得</a></li>
+<li><a href="/pages/faq">常见问题</a></li>
+
+
+<li><a target="_blank" href="http://forum.qzy.camp/">交流论坛</a></li>
+</ul>
+
+<ul class="nav navbar-nav navbar-right">
+  <% if !current_user %>
+<li>
+     <%= link_to("登入", new_user_session_path) %>
+</li>
+<li>
+     <%= link_to("注册", new_user_registration_path)%>
+</li>
+      <% else %>
+    <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  Hi!, <%= current_user.email %>
+  <b class="caret"></b>
+  </a>
+  <ul class="dropdown-menu">
+  <li> <%= link_to("登出", destroy_user_session_path, method: :delete) %> </li>
+  </ul>
+  </li>
+  <% end %>
+</ul>
+
+</div>
+</div>
 </nav>
