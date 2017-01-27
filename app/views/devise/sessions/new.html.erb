@@ -1,15 +1,122 @@
-<h2>Log in</h2>
+<head>
+    <title>登录 | 新生大学全栈营</title>
 
-<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="form-inputs">
-    <%= f.input :email, required: false, autofocus: true %>
-    <%= f.input :password, required: false %>
-    <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
-  </div>
 
-  <div class="form-actions">
-    <%= f.button :submit, "Log in" %>
-  </div>
-<% end %>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" media="all" href="/assets/application-97155895c089d967a22e6edb655225c57bafdec7a32bb67a091a0875daa47192.css">
 
-<%= render "devise/shared/links" %>
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="1UWCoEYgBf3FBadizQLjr3QdCxvGYnvA7XgfBD8H/Uxyf5DuY3PXrDe5f3ZtnJ9cGeRE7E+WJwHkxUUAVZBkYQ==">
+
+
+
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+    <body class="sessions sessions-new">
+        <div id="qz-wrapper">
+
+
+          <div id="qz-content">
+            <div class="flash-block">
+
+            </div>
+            <div class="container common-block">
+              <div class="row">
+                <div class="registration-block">
+      <div class="col-sm-6 hidden-xs">
+        <div class="introduce">
+          <div class="row">
+            <div class="icon">
+              <img src="https://fullstack.xinshengdaxue.com/images/registration-1.png">
+            </div>
+            <div class="text">
+              <h2>用科学的方法轻松学编程</h2>
+              <p>
+                学编程和玩游戏一样开心
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="icon">
+              <img src="https://fullstack.xinshengdaxue.com/images/registration-2.png">
+            </div>
+            <div class="text">
+              <h2>职业程序员即时在线答疑</h2>
+              <p>
+                遇见Bug不再束手无策
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="icon">
+              <img src="https://fullstack.xinshengdaxue.com/images/registration-3.png">
+            </div>
+            <div class="text">
+              <h2>十年从业经验 大牛倾心分享</h2>
+              <p>
+                在成长的道路上，拉你一把
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 这是一根竖线 -->
+      <!-- <div class="col-sm-2 col-offset-5">
+
+        <div id="Layer1" style="position:absolute; width:1px; height:335px; z-index:1; background-color: rgb(151, 151, 151);layer-background-color: #666666; border: 1px none rgb(151, 151, 151); "></div>
+      </div> -->
+    <div class="right">
+      <div class="col-xs-12 col-sm-6 input">
+        <h1>登录</h1>
+        <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+          <div class="form-inputs">
+            <%= f.input :email, required: false, autofocus: true %>
+            <%= f.input :password, required: false %>
+            <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+          </div>
+
+          <div class="form-actions">
+            <%= f.button :submit, "Log in" %>
+          </div>
+        <% end %>
+
+        <%= render "devise/shared/links" %>
+<hr>
+
+    <div class="tip">
+      还没有账号？去<span id="link"><a id="link" href="/sign_up">注册</a></span>
+    </div>
+
+      </div>
+    </div>
+
+    </div>
+
+
+              </div>
+            </div>
+          </div>
+
+
+          <div id="modal-from-dom" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-from-dom-label" aria-hidden="true">
+
+    </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
