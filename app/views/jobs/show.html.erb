@@ -1,5 +1,19 @@
+<div class="title">
 <h1> <%= @job.title %> </h1>
-
+</div>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-500 -400 1000 400" class="grow">
+  <symbol id="leaf" viewBox="-50 -100 100 100" >
+    <path d="M 0 0 a 65 65 0 0 1 0 -100 a 65 65 0 0 1 0 100"/>
+  </symbol>
+  <circle cx="0" cy="0" r="20"></circle>
+  <use class="f4" xlink:href="#leaf" x="-50" y="-100" height="100" width="100"/>
+  <use class="f3" xlink:href="#leaf" x="-50" y="-100" height="100" width="100"/>
+  <use class="f3 right" xlink:href="#leaf" x="-50" y="-100" height="100" width="100"/>
+  <use class="f2" xlink:href="#leaf" x="-50" y="-100" height="100" width="100"/>
+  <use class="f2 right" xlink:href="#leaf" x="-50" y="-100" height="100" width="100"/>
+  <use class="f1" xlink:href="#leaf" x="-50" y="-100" height="100" width="100"/>
+  <use class="f1 right" xlink:href="#leaf" x="-50" y="-100" height="100" width="100"/>
+</svg>
 <p>
   <%= simple_format(@job.description) %>
 
