@@ -50,7 +50,6 @@
     -webkit-transition: opacity ease-in-out 1s;
     -moz-transition: opacity ease-in-out 1s;
     -ms-transition: opacity ease-in-out 1s;
-    -o-transition: opacity ease-in-out 1s;
     transition: opacity ease-in-out 1s;
 }
 .fade .item:first-child {
@@ -63,7 +62,6 @@
     -webkit-transition: opacity ease-in-out 1s;
     -moz-transition: opacity ease-in-out 1s;
     -ms-transition: opacity ease-in-out 1s;
-    -o-transition: opacity ease-in-out 1s;
     transition: opacity ease-in-out 1s;
 }
 
@@ -164,11 +162,9 @@
     position: relative;
     -webkit-transition: box-shadow 0.3s ease;
     -moz-transition: box-shadow 0.3s ease;
-    -o-transition: box-shadow 0.3s ease;
     transition: box-shadow 0.3s ease;
     -webkit-transition: background-color 0.3s ease;
     -moz-transition: background-color 0.3s ease;
-    -o-transition: background-color 0.3s ease;
     transition: background-color 0.3s ease;
 
 }
@@ -184,7 +180,6 @@
     border-radius: 50%;
     -webkit-transition: background-color 0.3s ease;
     -moz-transition: background-color 0.3s ease;
-    -o-transition: background-color 0.3s ease;
     transition: background-color 0.3s ease;
 }
 
@@ -405,7 +400,7 @@
     padding: 0.57em 1.9em;
     margin-top: 2.85em;
     text-align: center;
-    -o-text-overflow: clip;
+
     text-overflow: clip;
     letter-spacing: 2px;
     color: white;
@@ -413,7 +408,6 @@
     border: 2px solid #d49055;
     -webkit-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0),color 0.3s cubic-bezier(0, 0, 0, 0),width 0.3s cubic-bezier(0, 0, 0, 0),border-width 0.3s cubic-bezier(0, 0, 0, 0),border-color 0.3s cubic-bezier(0, 0, 0, 0);
     -moz-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0),color 0.3s cubic-bezier(0, 0, 0, 0),width 0.3s cubic-bezier(0, 0, 0, 0),border-width 0.3s cubic-bezier(0, 0, 0, 0),border-color 0.3s cubic-bezier(0, 0, 0, 0);
-    -o-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0),color 0.3s cubic-bezier(0, 0, 0, 0),width 0.3s cubic-bezier(0, 0, 0, 0),border-width 0.3s cubic-bezier(0, 0, 0, 0),border-color 0.3s cubic-bezier(0, 0, 0, 0);
     transition: background-color 0.3s cubic-bezier(0, 0, 0, 0),color 0.3s cubic-bezier(0, 0, 0, 0),width 0.3s cubic-bezier(0, 0, 0, 0),border-width 0.3s cubic-bezier(0, 0, 0, 0),border-color 0.3s cubic-bezier(0, 0, 0, 0);
 }
 .lp-section-2 {

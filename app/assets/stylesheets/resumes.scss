@@ -81,9 +81,3 @@
   opacity: 0.3;
   animation: stars 5s infinite;
 }
-
-@for $i from 1 through 7{
-  .star:nth-child(#{$i}){
-    animation-delay: $i * 0.5s
-  }
-}
