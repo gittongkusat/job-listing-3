@@ -50,41 +50,25 @@ $ocean-surface: hsl(190,
 }
 
 
-/*Ice Berg Animation*/
 
-.ice-berg {
-  transform: rotate(-2deg) translate(0, 0);
-  transform-origin: 400px 400px;
-  animation: ice-berg 3s ease-in-out infinite alternate;
-}
-
-@keyframes ice-berg {
-  100% {
-    transform: rotate(2deg) translate(10px, 30px)
-  }
-}
 
 
 /*Body Setup*/
 
 $hue: 40;
-body {
-  background: hsl($hue, 50%, 90%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 
 .title {
   height: 10vh;
   line-height: 3vh;
   font-size: 1.5vh;
-  padding-top: 2.5vh;
-  margin: 0;
+
+
   color: hsl($hue, 40%, 30%);
   border-top: 1px solid;
-  border-bottom: 1px solid;
+
   font-family: 'Unica One', cursive;
+  text-align: center;
 }
 
 .world {
@@ -114,6 +98,7 @@ $step: -90px;
   width: 50vw;
   height: 25vh;
   vertical-align: bottom;
+  text-align: center;
 }
 
 // Leafs Positions and Animation
